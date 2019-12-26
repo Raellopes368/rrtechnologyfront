@@ -391,6 +391,7 @@ function Conversa(props) {
           onChange={() => digitando()}
           onKeyPress={e => {
             if (e.which === 13) {
+              e.preventDefault();
               handleMensage();
             }
           }}
