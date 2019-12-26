@@ -10,7 +10,7 @@ const httpLink = new HttpLink({
 });
 
 const wsLink = new WebSocketLink({
-  uri: `ws://rrtechnologyback.herokuapp.com/`,
+  uri: `wss://rrtechnologyback.herokuapp.com/`,
   options: {
     reconnect: true
   }
