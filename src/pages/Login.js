@@ -45,6 +45,15 @@ class Login extends Component {
               placeholder="Sua Senha"
               value={this.state.newPass}
               onChange={e => this.setState({ newPass: e.target.value })}
+              onKeyPress={e => {
+                if (
+                  e.which === 13 &&
+                  this.state.newName !== "" &&
+                  this.state.newPass !== ""
+                ) {
+                  this.handleSubmint();
+                }
+              }}
             />
 
             <input
