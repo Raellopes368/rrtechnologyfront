@@ -232,33 +232,6 @@ function Conversa(props) {
       socket.emit("Situation", { contt_id, data: "Online" });
     } else console.log("nao");
   }
-  handleMensageEnter();
-  async function handleMensageEnter() {
-    document.addEventListener("keypress", function(e) {
-      const msg = document.getElementById("msg");
-      let mensagem = msg.value;
-      if (e.which === 13 && mensagem) {
-        msg.value = "";
-        const resposta = response ? response : "";
-        setResponse("");
-        const { idUser, idCntt, id } = props.match.params;
-        // console.log(idUser)
-        if (mensagem.length > 0) {
-          props.newMessage({
-            variables: {
-              id: id,
-              transmissor: idUser,
-              receptor: idCntt,
-              userID: idUser,
-              mensagem,
-              resposta
-            }
-          });
-          socket.emit("Situation", { contt_id, data: "Online" });
-        } else console.log("nao");
-      }
-    });
-  }
 
   function renderMensagens() {
     return (
@@ -416,6 +389,11 @@ function Conversa(props) {
           className="mensagem"
           placeholder="Digite aqui..."
           onChange={() => digitando()}
+          onKeyPress={e => {
+            if (e.which === 13) {
+              handleMensage();
+            }
+          }}
         ></textarea>
         <div className="button" onClick={() => handleMensage()}>
           <MdSend size={25} color="#fff" />
