@@ -1,0 +1,222 @@
+.body {
+  background: white;
+  height: 100%;
+  width: 100%;
+  padding-top: 52px;
+  overflow: auto;  
+}
+
+.containerAdd{
+  display:flex;
+  flex-direction:column;
+  padding-right: 25px; 
+}
+.add{
+  margin-top: 2px;
+  padding-top: 2px;
+  padding-left: 3px;
+  align-self: flex-end;
+  width: 45px;
+  height: 45px;
+  border-radius:50%;
+  background: #2f009a; 
+}
+.addPerson{
+  cursor: pointer;
+}
+
+.t {
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding: 50%;
+  background: blue;
+}
+.menu {
+  position: fixed;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  background: #2f009a;
+  z-index: 1;
+  padding: 0;
+  align-content: center;
+  align-items: center;
+}
+.form .error {
+  display: flex;
+  justify-content: center;
+  color: rgb(243, 7, 7);
+  margin-bottom: 3px;
+  margin-top: 5px;
+}
+.cnv {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  background-size: 100% 100%;
+  transition: all .3s linear;
+}
+#left{
+  position: absolute;
+  left: -100%;
+  transition: all .3s linear;
+}
+
+.cnt {
+  width: 100%;
+}
+.cnv .ContainerConversa {
+  width: 100%;
+  height: 60px;
+  padding: 5px 10px;
+  margin-left: -25px;
+  border-bottom: thin solid #cecece;
+  cursor: pointer;
+}
+.cnv .image {
+  width: 50px;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  background: #cecece;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+.cont {
+  display: flex;
+  margin-left: 10px; 
+  flex-direction: row;
+}
+.ch {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+}
+.cnv .ContainerConversa .mensagem {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12pt;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+.cnv .contato {
+  padding-bottom: 5px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  transition: all .2s linear;
+}
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cnv .hour {
+  text-decoration: none;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 10pt;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+.contato{
+  padding-left: 6px;
+}
+
+.menu .conversas {
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  font-size: 20pt;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu .contatos {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+  font-size: 20pt;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+.containerImage{
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.imageSelected{
+  margin-top: 40px;
+  width: 70%;
+  height: 62%;
+}
+
+
+.mensagemContainer{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  margin-bottom:5px; 
+}
+
+.imageContato{
+  width: 60px;
+  height: 60px;
+  /* background: #cecece; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.containerMessages{
+  border-bottom:thin solid #cecece;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left:10px; 
+  padding-left:2px; 
+  justify-content: space-between;
+  cursor: pointer;
+}
+.messageReceiver{
+  padding-bottom: 5px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12pt;
+  
+}
+.name{
+  padding-top: 5px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  transition: all .2s linear;
+  justify-content: space-between;
+}
+.hora{
+  text-decoration: none;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 11pt;
+  display: flex;
+  padding-right: 8px;
+}
+

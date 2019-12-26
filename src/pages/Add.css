@@ -1,0 +1,134 @@
+.menuAdd {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  background: #2f009a;
+  z-index: 1;
+}
+.containerMenu{
+  display: inline-block;
+}
+
+.contatos {
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20pt;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+.md{
+  padding-top: 7px;
+}
+.busca{
+  margin-left: 25px;
+  padding:10px 0 10px 20px;
+}
+.buscaCntt{
+  padding:12px 12px 15px 20px;
+  margin-right: 15px;
+  border-radius: 20px;
+  border: none;
+  width: 250px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+}
+
+
+.search{
+  cursor: pointer;
+}
+
+.containerContatos{
+  margin-top: 78px;
+  width: 100%;
+  overflow: auto;
+}
+.cnv {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  background-size: 100% 100%;
+  transition: all .3s linear;
+}
+#left{
+  position: absolute;
+  left: -100%;
+  transition: all .3s linear;
+}
+
+.cnt {
+  width: 100%;
+
+}
+.cnv .ContainerConversa {
+  width: 100%;
+  height: 60px;
+  padding: 5px 10px;
+  margin-left: -25px;
+  border-bottom: thin solid #cecece;
+  cursor: pointer;
+}
+.cnv .image {
+  width: 50px;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  background: #cecece;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+.cont {
+  display: flex;
+  margin-left: 10px; 
+  flex-direction: row;
+}
+.ch {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+}
+ .message {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12pt;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+.cnv .contato {
+  padding-bottom: 5px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  transition: all .2s linear;
+}
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cnv .AddContato {
+  text-decoration: none;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 25pt;
+  color:#fff;
+  background: #2f009a;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contato{
+  padding-left: 6px;
+}
+.error{
+  color:red;
+  font-size: 14pt;
+  font-weight: bold;
+  word-wrap: break-word;
+  padding-top: 10px;
+}

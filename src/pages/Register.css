@@ -1,0 +1,89 @@
+.imagem {
+  cursor: pointer;
+  height: 150px;
+  width: 100px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: end;
+  margin-left: 200px;
+  margin-top: -50px;
+}
+input[type="file"] {
+  display: none;
+}
+label {
+  display: block;
+}
+.legend {
+  color: white;
+  font-size: 13pt;
+  width: 100px;
+  word-wrap: break-word;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 200px;
+}
+img {
+  width: 100px;
+  height: 150px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+}
+
+.container .form {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .form .buttom:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.container .form input::placeholder {
+  font-family: "Satisfy", cursive;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.container .form input {
+  margin-top: 20px;
+  border: 1 solid white;
+  border-radius: 7px;
+  height: 48px;
+  padding: 0 20px;
+  font-size: 22px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-family: "Satisfy", cursive;
+}
+
+.bio {
+  margin-top: 20px;
+  border: 1 solid white;
+  border-radius: 7px;
+  height: 100px;
+  resize: none;
+  padding: 0 20px;
+  font-size: 22px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-family: "Satisfy", cursive;
+}
+.bio::placeholder {
+  font-family: "Satisfy", cursive;
+  font-size: 15pt;
+  color: rgba(255, 255, 255, 0.65);
+}
